@@ -6,6 +6,12 @@ authors = ["Kyle Wahlberg<kyle.s.wahlberg@gmail.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "first"
+
+[[bin]]
+name = "second"
+
 [dependencies]
 tokio = "1.21.2"
 serde = { version = "1.0", features = ["derive"] }
@@ -13,7 +19,7 @@ log = "0.4"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 # NOTE: the following crate is not part of the SDK, but it is maintained by AWS.
 lambda_runtime = "0.4"
-aws-config = "0.51.0"
+aws-config = "0.52.0"
 # We are using the Amazon Simple Storage Service (Amazon S3) crate in this example,
 # but you can use any SDK crate in your Lambda code.
 aws-sdk-s3 = "0.21.0"
